@@ -801,9 +801,25 @@ select.form-control {
 }
 
 .avatar-container {
+    width: 150px; /* или любой желаемый размер */
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%; /* чтобы сделать изображение круглым, если нужно */
+    border: 3px solid #ccc; /* рамка вокруг изображения, при необходимости */
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: #fff; /* или другой цвет фона */
+    padding: 5px; /* немного отступа внутри рамки */
 }
+
+.avatar-container img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover; /* сохраняет пропорции, заполняя рамку без искажения */
+    display: block;
+}
+
 
 .avatar-placeholder {
     width: 150px;
